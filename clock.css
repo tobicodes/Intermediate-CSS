@@ -1,0 +1,59 @@
+body{
+    margin: 0%;
+    width: 100%
+}
+
+#container{
+    display: flex;
+    width: 99%;
+    background: grey;
+    height: 300px
+}
+
+#circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 1000px;
+    margin: auto auto;
+    background: salmon;
+    border: 5px solid black;
+
+}
+
+#seconds_arm{
+    width: 5px;
+    height: 110px;
+    background: #72ecfa;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    animation: clock 60s infinite;
+    transform-origin:bottom;
+    animation-timing-function: linear;
+    border: 1px solid black;
+}
+
+@keyframes clock {
+    0%{
+      transform: translate(0,0)
+    }
+   
+    50%{
+      transform: rotate(-180deg)
+    }
+ 
+ }
+
+ #minutes_arm {
+    width: 5px;
+    height: 60px;
+    background: #39B3D9;
+    margin: auto;
+    transform-origin:top;
+    animation: clock 3600s infinite;
+    animation-timing-function: linear;
+    border: 1px solid black;
+    
+}
+
+  
